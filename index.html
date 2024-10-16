@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sorteador</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="./comand.js"></script>
+</head>
+
+<body>
+    <div class="div-pai">
+        <img src="./img/dado.png" alt="imagem dados de sorteio">
+        <h3 id="text">DM Sorteio</h3>
+        <div class="div-filho">
+            <h1 id="result">Você vai sortear 1 número, entre <br>o número inicial e o número final.</h1>
+        </div>
+    </div>
+
+    <div class="caixa2">
+        <input oninput="clickInput()" class="min" placeholder="Número inicial">
+        <input class="max" placeholder="Número final">
+    </div>
+
+    <div class="botaoRefresh">
+        <button id="botao-refresh" onclick="botaoRefresh()">Novo Sorteio</button>
+    </div>
+
+    <div class="botaoStart">
+        <button class="botaoSortear" onclick="botaoSortear()">Sortear</button>
+    </div>
+
+    <div class="divFundo">
+        <img class="background" src="./img/background.jpg">
+    </div>
+
+    <div class="data">
+        <p id="comprovanteData"> </p>
+        <p id="comprovanteHora"> </p>
+    </div>
+
+</body>
+
+</html>

@@ -177,7 +177,7 @@ label {
         height: 50px;
         width: 150px;
         font-size: 20px;
-        bottom: 5%;
+        bottom: 10%;
         left: 50%;
         transform: translateX(-50%);
 
@@ -189,5 +189,10 @@ label {
         font-size: 20px;
 
     }
-
+    .container{
+        margin-top: 100px;
+    }
+    button{
+        margin-top: 15px;
+    }
 }

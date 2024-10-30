@@ -10,47 +10,49 @@
 </head>
 
 <body>
-    <div class="div-pai">
-        <img src="./img/dado.png" alt="imagem dados de sorteio">
-        <h3 id="text">DM Sorteador</h3>
-        <div class="div-filho">
-            <h1 id="result">Sorteie 1 número</h1>
+    <div class="container">
+        <div class="div-pai">
+            <img src="./img/dado.png" alt="imagem dados de sorteio">
+            <h3 id="text">DM Sorteador</h3>
+            <div class="div-filho">
+                <h1 id="result">Sorteie 1 número</h1>
+            </div>
+        </div>
+
+        <div class="caixa2">
+            <div class="label">
+                <label>
+                    Entre:
+                    <input oninput="clickInput()" class="min" placeholder="Número inicial">
+                </label>
+            </div>
+            <div>
+                <label>
+                    e:
+                    <input class="max" placeholder="Número final">
+                </label>
+            </div>
+        </div>
+
+        <div class="botaoRefresh">
+            <button id="botao-refresh" onclick="botaoRefresh()">Novo Sorteio</button>
+        </div>
+
+        <div class="botaoStart">
+            <button class="botaoSortear" onclick="botaoSortear()">Sortear</button>
+        </div>
+
+        <div class="pai-data">
+            <div class="data">
+                <p id="comprovanteData"> </p>
+                <p id="comprovanteHora"> </p>
+            </div>
         </div>
     </div>
-
-    <div class="caixa2">
-        <div class="label">
-            <label>
-                Entre:
-                <input oninput="clickInput()" class="min" placeholder="Número inicial">
-            </label>
-        </div>
-        <div>
-            <label>
-                e:
-                <input class="max" placeholder="Número final">
-            </label>
-        </div>
-    </div>
-
-    <div class="botaoRefresh">
-        <button id="botao-refresh" onclick="botaoRefresh()">Novo Sorteio</button>
-    </div>
-
-    <div class="botaoStart">
-        <button class="botaoSortear" onclick="botaoSortear()">Sortear</button>
-    </div>
-
     <div class="divFundo">
         <img class="background" src="./img/background.jpg">
     </div>
 
-    <div class="pai-data">
-        <div class="data">
-            <p id="comprovanteData"> </p>
-            <p id="comprovanteHora"> </p>
-        </div>
-    </div>
 </body>
 
 </html>

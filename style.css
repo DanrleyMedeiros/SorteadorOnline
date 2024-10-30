@@ -76,7 +76,18 @@ h1 {
 }
 
 h3 {
-    font-size: 80px;
+    font-size: 60px;
+    color: beige;
+    text-shadow: 
+    -2px -2px 0 #000,  
+     2px -2px 0 #000,
+    -2px  2px 0 #000,
+     2px  2px 0 #000,
+    -2px  0px 0 #000,  
+     2px  0px 0 #000,
+     0px -2px 0 #000,
+     0px  2px 0 #000;
+    font-weight: bold;
 }
 
 button {

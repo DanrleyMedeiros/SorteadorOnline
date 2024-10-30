@@ -31,8 +31,8 @@ function botaoSortear() {
 
   setTimeout(() => {
     const h3 = document.querySelector("h3")
-    h3.style.fontSize = "70px"
-    const newtext = "🎇🎆Parabéns ao ganhador!!!✨🎉"
+  
+    const newtext = "🎇Parabéns ao ganhador!✨"
     document.getElementById("text").innerHTML = newtext
 
     const dataAtual = new Date();

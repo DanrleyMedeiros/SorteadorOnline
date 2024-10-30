@@ -12,15 +12,25 @@
 <body>
     <div class="div-pai">
         <img src="./img/dado.png" alt="imagem dados de sorteio">
-        <h3 id="text">DM Sorteio</h3>
+        <h3 id="text">DM Sorteador</h3>
         <div class="div-filho">
-            <h1 id="result">Você vai sortear 1 número, entre <br>o número inicial e o número final.</h1>
+            <h1 id="result">Sorteie 1 número</h1>
         </div>
     </div>
 
     <div class="caixa2">
-        <input oninput="clickInput()" class="min" placeholder="Número inicial">
-        <input class="max" placeholder="Número final">
+        <div class="label">
+            <label>
+                Entre:
+                <input oninput="clickInput()" class="min" placeholder="Número inicial">
+            </label>
+        </div>
+        <div>
+            <label>
+                e:
+                <input class="max" placeholder="Número final">
+            </label>
+        </div>
     </div>
 
     <div class="botaoRefresh">
@@ -35,11 +45,12 @@
         <img class="background" src="./img/background.jpg">
     </div>
 
-    <div class="data">
-        <p id="comprovanteData"> </p>
-        <p id="comprovanteHora"> </p>
+    <div class="pai-data">
+        <div class="data">
+            <p id="comprovanteData"> </p>
+            <p id="comprovanteHora"> </p>
+        </div>
     </div>
-
 </body>
 
 </html>
